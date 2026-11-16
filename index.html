@@ -7,296 +7,264 @@
 <title>माझ्या पारूसाठी ❤️</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+ min-height:100vh;
+ padding:25px 12px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background:linear-gradient(135deg,#24001f,#8e245c,#ff719f);
+ font-family:Georgia,serif;
+ overflow-x:hidden;
 }
 
-body {
-    min-height: 100vh;
-    font-family: Georgia, serif;
-    background: linear-gradient(135deg,#20002c,#6f174c,#de477b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 12px;
-    overflow-x: hidden;
+.card{
+ max-width:650px;
+ width:100%;
+ padding:35px 24px;
+ text-align:center;
+ border-radius:28px;
+ background:linear-gradient(145deg,#fff8fb,#ffe3ee);
+ border:2px solid #ffc0d8;
+ box-shadow:0 0 35px #ff9fc4,0 20px 60px #25001f;
+ animation:appear 1.5s ease;
+ position:relative;
 }
 
-/* Floating Hearts */
-.heart {
-    position: fixed;
-    bottom: -30px;
-    color: #ffb6d5;
-    animation: float 9s linear infinite;
-    pointer-events: none;
-    opacity: .8;
+@keyframes appear{
+ from{opacity:0;transform:translateY(40px) scale(.95)}
+ to{opacity:1;transform:translateY(0) scale(1)}
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 0;
-    }
-    20% {opacity: 1;}
-    100% {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-    }
+.top-heart{
+ font-size:55px;
+ animation:beat 1.2s infinite;
 }
 
-.card {
-    width: 100%;
-    max-width: 650px;
-    padding: 38px 25px;
-    text-align: center;
-    background: linear-gradient(145deg,#fff5f8,#ffe2ed);
-    border-radius: 30px;
-    border: 3px solid #ffb5d0;
-    box-shadow: 0 0 35px #ff69a4,
-                0 20px 60px rgba(0,0,0,.5);
-    position: relative;
-    animation: open 1.5s ease;
+@keyframes beat{
+ 50%{transform:scale(1.2)}
 }
 
-@keyframes open {
-    from {
-        opacity: 0;
-        transform: scale(.8) translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-    }
+.tag{
+ color:#b52a65;
+ letter-spacing:3px;
+ font-size:12px;
+ margin:15px 0;
 }
 
-.top {
-    font-size: 50px;
-    animation: heartbeat 1.2s infinite;
+h1{
+ color:#c2185b;
+ font-size:34px;
+ margin:15px 0;
+ text-shadow:0 3px 12px #ffc2dc;
 }
 
-@keyframes heartbeat {
-    50% {transform: scale(1.2);}
+.subtitle{
+ color:#d63384;
+ font-size:19px;
+ margin-bottom:25px;
 }
 
-.small {
-    color: #b52d69;
-    letter-spacing: 3px;
-    font-size: 13px;
-    margin-top: 15px;
+.divider{
+ width:100px;
+ height:3px;
+ background:#e879a7;
+ margin:22px auto;
+ border-radius:10px;
 }
 
-h1 {
-    color: #b51e61;
-    font-size: 35px;
-    margin: 15px 0;
-    text-shadow: 1px 2px 5px #ffc4dc;
+.message{
+ color:#593247;
+ font-size:18px;
+ line-height:2;
+ margin:25px 0;
 }
 
-h2 {
-    color: #d63384;
-    font-size: 21px;
-    margin-bottom: 25px;
+.message-box{
+ background:white;
+ padding:22px 16px;
+ border-radius:18px;
+ border:1px solid #ffc3d9;
+ box-shadow:0 5px 20px #f8c2d7;
+ margin:25px 0;
 }
 
-.line {
-    width: 100px;
-    height: 3px;
-    background: #ed78a8;
-    margin: 20px auto;
-    border-radius: 10px;
+.message-box p{
+ color:#87365b;
+ font-size:18px;
+ line-height:2;
 }
 
-.message {
-    color: #573044;
-    font-size: 18px;
-    line-height: 2;
-    margin: 22px 0;
+.highlight{
+ color:#d81b60;
+ font-weight:bold;
 }
 
-.message span {
-    color: #d81b60;
-    font-weight: bold;
+.love{
+ color:#d81b60;
+ font-size:25px;
+ font-weight:bold;
+ line-height:1.8;
+ margin:25px 0;
 }
 
-.memory {
-    background: #fff;
-    border-left: 4px solid #ed72a4;
-    padding: 20px 15px;
-    border-radius: 12px;
-    margin: 25px 0;
-    color: #a32c60;
-    font-size: 18px;
-    line-height: 1.9;
-    font-style: italic;
-    box-shadow: 0 5px 15px #f7bfd4;
+.final{
+ background:linear-gradient(135deg,#ffedf4,#fff);
+ border-radius:18px;
+ padding:20px 15px;
+ color:#bd2864;
+ font-size:19px;
+ line-height:2;
+ margin-top:25px;
+ border:1px dashed #ef83ae;
 }
 
-.love {
-    font-size: 24px;
-    color: #d81b60;
-    font-weight: bold;
-    margin: 25px 0;
-    line-height: 1.8;
+button{
+ border:0;
+ border-radius:40px;
+ padding:15px 25px;
+ background:linear-gradient(45deg,#d81b60,#ff78a7);
+ color:white;
+ font-size:17px;
+ cursor:pointer;
+ box-shadow:0 5px 20px #ed9cba;
+ margin-top:25px;
 }
 
-button {
-    background: linear-gradient(45deg,#d81b60,#ff6099);
-    color: white;
-    padding: 15px 27px;
-    border: none;
-    border-radius: 40px;
-    font-size: 17px;
-    box-shadow: 0 5px 20px #e78aaa;
-    cursor: pointer;
-    transition: .3s;
+#surprise{
+ display:none;
+ color:#c2185b;
+ font-size:20px;
+ line-height:2;
+ margin-top:25px;
+ animation:appear 1s ease;
 }
 
-button:hover {
-    transform: scale(1.07);
+.signature{
+ color:#b52a65;
+ font-size:23px;
+ margin-top:30px;
 }
 
-#surprise {
-    display: none;
-    margin-top: 25px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 15px;
-    color: #bd2365;
-    font-size: 19px;
-    line-height: 2;
-    animation: open 1s ease;
+.heart{
+ position:fixed;
+ bottom:-30px;
+ animation:float 9s linear infinite;
+ pointer-events:none;
 }
 
-.signature {
-    color: #ad235d;
-    font-size: 20px;
-    margin-top: 30px;
+@keyframes float{
+ 0%{transform:translateY(0) rotate(0);opacity:0}
+ 20%{opacity:.9}
+ 100%{transform:translateY(-110vh) rotate(360deg);opacity:0}
 }
 
-.footer {
-    font-size: 13px;
-    color: #bb7291;
-    margin-top: 20px;
+.footer{
+ color:#bd7191;
+ font-size:12px;
+ letter-spacing:2px;
+ margin-top:25px;
 }
-
 </style>
 </head>
 
 <body>
 
 <script>
-for(let i=0;i<22;i++){
-    let h=document.createElement("div");
-    h.className="heart";
-    h.innerHTML=["❤️","💕","💗","🌸","💖"][i%5];
-    h.style.left=Math.random()*100+"%";
-    h.style.animationDuration=(5+Math.random()*7)+"s";
-    h.style.animationDelay=Math.random()*8+"s";
-    h.style.fontSize=(15+Math.random()*20)+"px";
-    document.body.appendChild(h);
+for(let i=0;i<20;i++){
+ let h=document.createElement("div");
+ h.className="heart";
+ h.innerHTML=["❤️","💕","💗","💖","🌸"][i%5];
+ h.style.left=Math.random()*100+"%";
+ h.style.animationDuration=(6+Math.random()*8)+"s";
+ h.style.animationDelay=Math.random()*8+"s";
+ h.style.fontSize=(16+Math.random()*20)+"px";
+ document.body.appendChild(h);
 }
 </script>
 
 <div class="card">
 
-    <div class="top">💌</div>
+<div class="top-heart">💌</div>
 
-    <div class="small">A SPECIAL MESSAGE FOR YOU</div>
+<div class="tag">A LETTER FROM MY HEART</div>
 
-    <h1>माझ्या परू साठी ❤️</h1>
+<h1>माझ्या परू साठी ❤️</h1>
 
-    <h2>शेवटची भेट... 🥹</h2>
+<div class="subtitle">काही आठवणी कधीच विसरता येत नाहीत... 🥹</div>
 
-    <div class="line"></div>
+<div class="divider"></div>
 
-    <p class="message">
-    कदाचित आपली ही शेवटची भेट असेल,
-    पण तुझ्यासोबत घालवलेला प्रत्येक क्षण
-    माझ्या मनात कायम जिवंत राहील. ❤️
-    </p>
+<div class="message-box">
+<p>
+Thank you माझ्या आयुष्यात आलीस आणि माझं आयुष्य इतकं सुंदर केलंस त्यासाठी! ❤️
+<br><br>
+तुझ्यासोबत घालवलेला प्रत्येक क्षण, प्रत्येक आठवण आणि तुझ्यासोबत केलेली प्रत्येक मजा मी आयुष्यभर विसरू शकणार नाही. 🥹❤️
+</p>
+</div>
 
-    <p class="message">
-    पुन्हा कधी भेट होईल माहीत नाही...
-    पुन्हा एकत्र बसून हसता येईल की नाही,
-    मनसोक्त बोलता येईल की नाही,
-    हेही माहीत नाही...
-    </p>
+<div class="divider"></div>
 
-    <div class="memory">
-    पण एक गोष्ट नक्की आहे...
+<div class="message">
+आपण यापुढे भेटू की नाही, पुन्हा एकत्र वेळ घालवू की नाही, हे मला माहीत नाही…
+<br><br>
+पण एक गोष्ट कायम लक्षात ठेव, आपण भेटलो किंवा नाही भेटलो, तरी <span class="highlight">मी नेहमी तुझाच राहणार आहे.</span>
+<br><br>
+माझ्या मनात तुझी जागा कोणीच घेऊ शकणार नाही. ❤️
+</div>
 
-    तुझ्यासोबतच्या त्या छोट्या छोट्या आठवणी,
-    तुझं हसणं, तुझं रुसणं,
-    तुझं माझ्याशी बोलणं आणि
-    तुझ्यासोबत घालवलेला प्रत्येक क्षण...
+<div class="love">
+I LOVE YOU ❤️
 
-    हे सगळं मी आयुष्यभर जपून ठेवणार आहे. 🥹❤️
-    </div>
+<br>
+बायको माझी! माझी परू मांजर 😻❤️🫂
+</div>
 
-    <p class="message">
-    धन्यवाद पारू, माझ्या आयुष्यात येऊन
-    माझं आयुष्य इतकं सुंदर केल्याबद्दल!
+<div class="divider"></div>
 
-    <br>
-    <span>तू माझ्यासाठी नेहमीच खूप खास राहशील.</span>
-    </p>
+<div class="final">
+तू माझ्या आयुष्यात आलीस,
+हेच माझ्यासाठी खूप मोठं सुख आहे! ❤️
+<br><br>
+🥹🌹
+</div>
 
-    <div class="line"></div>
+<button onclick="showMessage()">
+एक शेवटची गोष्ट... 💗
+</button>
 
-    <div class="love">
-    I LOVE YOU ❤️
+<div id="surprise">
+पारू... ❤️
 
-    <br>
-    माझी परू मांजर 😻
-    </div>
+<br><br>
+काळ बदलला, वेळ बदलली,
+आपल्या भेटी कमी झाल्या तरी...
 
-    <button onclick="showLove()">
-    अजून एक गोष्ट सांगायची आहे... 💗
-    </button>
+<br><br>
+तुझ्यासोबतच्या आठवणी
+माझ्या मनात कायम तशाच राहतील. 🥹
 
-    <div id="surprise">
-    ❤️ परू...
+<br><br>
+<strong>Thank You For Coming Into My Life! ❤️</strong>
+</div>
 
-    <br><br>
+<div class="signature">
+फक्त तुझाच... ❤️🫂
+</div>
 
-    ही भेट शेवटची असली,
-    तरी आपल्या आठवणींना कधीच शेवट नसेल...
-
-    <br><br>
-
-    कधी एकटं वाटलं किंवा जुन्या आठवणी आल्या,
-    तर एवढंच लक्षात ठेव...
-
-    <br><br>
-
-    <b>कोणाच्या तरी आयुष्यात तू खूप सुंदर
-    आठवण बनून राहिली आहेस. 🥹❤️</b>
-
-    <br><br>
- 
-    Thank You For Everything! 🫂
-    </div>
-
-    <div class="signature">
-    फक्त तुझाच... ❤️
-    </div>
-
-    <div class="footer">
-    SOME MEMORIES NEVER FADE... ♾️
-    </div>
+<div class="footer">
+OUR MEMORIES WILL LIVE FOREVER ♾️
+</div>
 
 </div>
 
 <script>
-function showLove(){
-    let box=document.getElementById("surprise");
-    box.style.display="block";
-    box.scrollIntoView({
-        behavior:"smooth",
-        block:"center"
-    });
+function showMessage(){
+ const msg=document.getElementById("surprise");
+ msg.style.display="block";
+ msg.scrollIntoView({behavior:"smooth",block:"center"});
 }
 </script>
 
