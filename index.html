@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>माझ्या पारूसाठी ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg,#20002c,#6f174c,#de477b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 12px;
+    overflow-x: hidden;
+}
+
+/* Floating Hearts */
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ffb6d5;
+    animation: float 9s linear infinite;
+    pointer-events: none;
+    opacity: .8;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {opacity: 1;}
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    padding: 38px 25px;
+    text-align: center;
+    background: linear-gradient(145deg,#fff5f8,#ffe2ed);
+    border-radius: 30px;
+    border: 3px solid #ffb5d0;
+    box-shadow: 0 0 35px #ff69a4,
+                0 20px 60px rgba(0,0,0,.5);
+    position: relative;
+    animation: open 1.5s ease;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+        transform: scale(.8) translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.top {
+    font-size: 50px;
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+    50% {transform: scale(1.2);}
+}
+
+.small {
+    color: #b52d69;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+h1 {
+    color: #b51e61;
+    font-size: 35px;
+    margin: 15px 0;
+    text-shadow: 1px 2px 5px #ffc4dc;
+}
+
+h2 {
+    color: #d63384;
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background: #ed78a8;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.message {
+    color: #573044;
+    font-size: 18px;
+    line-height: 2;
+    margin: 22px 0;
+}
+
+.message span {
+    color: #d81b60;
+    font-weight: bold;
+}
+
+.memory {
+    background: #fff;
+    border-left: 4px solid #ed72a4;
+    padding: 20px 15px;
+    border-radius: 12px;
+    margin: 25px 0;
+    color: #a32c60;
+    font-size: 18px;
+    line-height: 1.9;
+    font-style: italic;
+    box-shadow: 0 5px 15px #f7bfd4;
+}
+
+.love {
+    font-size: 24px;
+    color: #d81b60;
+    font-weight: bold;
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+button {
+    background: linear-gradient(45deg,#d81b60,#ff6099);
+    color: white;
+    padding: 15px 27px;
+    border: none;
+    border-radius: 40px;
+    font-size: 17px;
+    box-shadow: 0 5px 20px #e78aaa;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+#surprise {
+    display: none;
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    color: #bd2365;
+    font-size: 19px;
+    line-height: 2;
+    animation: open 1s ease;
+}
+
+.signature {
+    color: #ad235d;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.footer {
+    font-size: 13px;
+    color: #bb7291;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<script>
+for(let i=0;i<22;i++){
+    let h=document.createElement("div");
+    h.className="heart";
+    h.innerHTML=["❤️","💕","💗","🌸","💖"][i%5];
+    h.style.left=Math.random()*100+"%";
+    h.style.animationDuration=(5+Math.random()*7)+"s";
+    h.style.animationDelay=Math.random()*8+"s";
+    h.style.fontSize=(15+Math.random()*20)+"px";
+    document.body.appendChild(h);
+}
+</script>
+
+<div class="card">
+
+    <div class="top">💌</div>
+
+    <div class="small">A SPECIAL MESSAGE FOR YOU</div>
+
+    <h1>माझ्या परू साठी ❤️</h1>
+
+    <h2>शेवटची भेट... 🥹</h2>
+
+    <div class="line"></div>
+
+    <p class="message">
+    कदाचित आपली ही शेवटची भेट असेल,
+    पण तुझ्यासोबत घालवलेला प्रत्येक क्षण
+    माझ्या मनात कायम जिवंत राहील. ❤️
+    </p>
+
+    <p class="message">
+    पुन्हा कधी भेट होईल माहीत नाही...
+    पुन्हा एकत्र बसून हसता येईल की नाही,
+    मनसोक्त बोलता येईल की नाही,
+    हेही माहीत नाही...
+    </p>
+
+    <div class="memory">
+    पण एक गोष्ट नक्की आहे...
+
+    तुझ्यासोबतच्या त्या छोट्या छोट्या आठवणी,
+    तुझं हसणं, तुझं रुसणं,
+    तुझं माझ्याशी बोलणं आणि
+    तुझ्यासोबत घालवलेला प्रत्येक क्षण...
+
+    हे सगळं मी आयुष्यभर जपून ठेवणार आहे. 🥹❤️
+    </div>
+
+    <p class="message">
+    धन्यवाद पारू, माझ्या आयुष्यात येऊन
+    माझं आयुष्य इतकं सुंदर केल्याबद्दल!
+
+    <br>
+    <span>तू माझ्यासाठी नेहमीच खूप खास राहशील.</span>
+    </p>
+
+    <div class="line"></div>
+
+    <div class="love">
+    I LOVE YOU ❤️
+
+    <br>
+    माझी परू मांजर 😻
+    </div>
+
+    <button onclick="showLove()">
+    अजून एक गोष्ट सांगायची आहे... 💗
+    </button>
+
+    <div id="surprise">
+    ❤️ परू...
+
+    <br><br>
+
+    ही भेट शेवटची असली,
+    तरी आपल्या आठवणींना कधीच शेवट नसेल...
+
+    <br><br>
+
+    कधी एकटं वाटलं किंवा जुन्या आठवणी आल्या,
+    तर एवढंच लक्षात ठेव...
+
+    <br><br>
+
+    <b>कोणाच्या तरी आयुष्यात तू खूप सुंदर
+    आठवण बनून राहिली आहेस. 🥹❤️</b>
+
+    <br><br>
+ 
+    Thank You For Everything! 🫂
+    </div>
+
+    <div class="signature">
+    फक्त तुझाच... ❤️
+    </div>
+
+    <div class="footer">
+    SOME MEMORIES NEVER FADE... ♾️
+    </div>
+
+</div>
+
+<script>
+function showLove(){
+    let box=document.getElementById("surprise");
+    box.style.display="block";
+    box.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
+}
+</script>
+
+</body>
+</html>
